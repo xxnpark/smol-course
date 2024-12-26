@@ -32,5 +32,8 @@
         ]
       }
     },
-    "postCreateCommand": "uv venv && uv pip sync requirements.txt"
+    "postCreateCommand": "uv venv && uv pip sync requirements.txt",
+    "containerEnv": {
+      "HF_TOKEN": "${localEnv:HF_TOKEN}"
+    }
   }
